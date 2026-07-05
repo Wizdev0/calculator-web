@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Geist+Pixel&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Geist+Pixel&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.calculator{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10%;
+    background-color: aliceblue;
+    padding: 20px;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+}
+
+.display{
+    margin-top: 10px;
+    padding: 10px 15px;
+    height: 70px;
+    border: none;
+    outline: none;
+    text-align: right;
+    font-size: 22px;
+    font-family: "Geist pixel", sans-serif;
+    font-weight: 500;
+    color: #000000;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: inset 2px 2px 3px 0.5px rgba(0,0,0,0.5),
+                inset 0.5px 2px 3px 0.5px rgba(0,0,0,0.5);
+}
+
+.display:focus{
+    border: 2px solid aqua;
+}
+
+.buttons-div{
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.button{
+    width: 70px;
+    height: 60px;
+    border: 1px solid aqua;
+    background-color: #fff;
+    border-radius: 5px;
+    color: #000000;
+    font-size: 17px;
+    font-family: "inter", sans-serif;
+    font-weight: 500;
+    transition: background-color 0.2s ease-out;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.button:hover{
+    background-color: antiquewhite;
+}
+
+.trademark{
+    display: flex;
+    align-self: end;
+    font-size: 13px;
+    font-style: italic;
+    font-family: "inter", sans-serif;
+    font-weight: 500;
+}
